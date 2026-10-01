@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { ModalProjeto } from './modal-projeto/modal-projeto';
 
 interface Projeto {
   titulo: string;
@@ -9,7 +10,7 @@ interface Projeto {
 }
 
 @Component({
-  imports: [],
+  imports: [ModalProjeto],
   selector: 'app-projetos',
   templateUrl: './projetos.html',
 })
